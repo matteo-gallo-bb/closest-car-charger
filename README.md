@@ -38,11 +38,3 @@ $ curl -s http://127.0.0.1:8080/api?address=39+Dorset+Street+Upper | json_pp
     "numberOfPoints":1
 }
 ```
-
-[{
-"place_id":14193296,
-"lat":"53.3554511",
-"lon":"-6.2655209",
-"display_name":"39, Dorset Street Upper, Rotunda B ED, Dublin 1, Dublin, County Dublin, Leinster, D01 W2C9, Ireland",
-"country_code":"ie"
-}]
