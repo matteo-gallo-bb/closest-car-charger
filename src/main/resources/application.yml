@@ -1,0 +1,11 @@
+httpclient:
+  connection:
+    timeout: 3000
+
+geolocation:
+  service:
+    url: "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&countrycodes=ie&country=Ireland&city=Dublin&street="
+
+carcharger:
+  service:
+    url: "https://api.openchargemap.io/v3/poi/?output=json&countrycode=IE&maxresults=1&compact=true&verbose=false&distance=10&distanceunit=KM"
