@@ -1,5 +1,5 @@
-FROM alpine:3.12
-RUN apk add --no-cache openjdk11-jre
+FROM alpine:edge
+RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing openjdk16-jre
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 VOLUME /tmp

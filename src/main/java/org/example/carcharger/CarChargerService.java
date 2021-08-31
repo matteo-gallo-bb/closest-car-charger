@@ -42,14 +42,15 @@ public class CarChargerService {
 
     public Optional<CarCharger> findClosest(Geolocation currentPosition) {
         String requestUrl = carChargerServiceUrl +
-                "&latitude=" + currentPosition.getLatitude() +
-                "&longitude=" + currentPosition.getLongitude();
+                "&latitude=" + currentPosition.latitude() +
+                "&longitude=" + currentPosition.longitude();
 
         // REST call to car charger API
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .GET()
                 .uri(URI.create(requestUrl))
                 .setHeader("User-Agent", "ClosestCarCharger App")
+                .setHeader("X-API-Key", "ClosestCarCharger App")
                 .timeout(Duration.ofMillis(3000))
                 .build();
 

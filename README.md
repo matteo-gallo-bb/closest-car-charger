@@ -6,7 +6,7 @@ The API exposes an endpoint under `/api` that accepts HTTP `GET` requests with m
 It returns the closest car charger within 10Km from the provided address.
 To simplify things, I built and configured the application to work only with addresses in Dublin, but potentially can work in many other countries.
 
-This project uses Java 11, you need to have jdk 11 installed and configured, or you need to run it in a Docker container.
+This project uses Java 16, you need to have jdk 16 installed and configured, or you need to run it in a Docker container.
 
 Follow the steps below if you want to run the Spring Boot app in a Docker container.
 
